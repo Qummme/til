@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: nox-check
+        name: Run nox check
+        entry: uvx nox -s check
+        language: system
+        pass_filenames: false
+
+      - id: nox-index
+        name: Run nox index
+        entry: uvx nox -s index
+        language: system
+        pass_filenames: false
